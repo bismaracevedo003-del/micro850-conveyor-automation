@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#0b1220"/>
+  <text x="30" y="42" fill="#4cc9f0" font-family="Segoe UI" font-size="24" font-weight="bold">Conveyor Sorting HMI — Micro850</text>
+  <rect x="30" y="70" width="520" height="180" rx="10" fill="#111c2e" stroke="#243650"/>
+  <text x="55" y="105" fill="#06d6a0" font-family="Segoe UI" font-size="28" font-weight="bold">RUNNING</text>
+  <g fill="#e6edf7" font-family="Segoe UI" font-size="16">
+    <text x="55" y="145">Total: 12</text><text x="250" y="145">Small: 8</text>
+    <text x="420" y="145">Large: 4</text><text x="55" y="185">Rejected: 2</text>
+    <text x="250" y="185">Throughput: 240 pph</text><text x="470" y="185">Speed: 50 %</text>
+  </g>
+  <rect x="30" y="275" width="520" height="120" rx="14" fill="#16233a" stroke="#4361aa" stroke-width="3"/>
+  <g fill="#4cc9f0" font-family="Segoe UI" font-size="12">
+    <text x="70" y="265">PE1</text><text x="190" y="265">PE2</text><text x="350" y="265">DIV</text>
+  </g>
+  <rect x="120" y="310" width="34" height="34" rx="4" fill="#06d6a0"/>
+  <rect x="310" y="310" width="34" height="34" rx="4" fill="#ffd166"/>
+  <rect x="590" y="70" width="280" height="325" rx="10" fill="#111c2e" stroke="#243650"/>
+  <text x="615" y="105" fill="#e6edf7" font-family="Segoe UI" font-size="18" font-weight="bold">Controls</text>
+  <g font-family="Segoe UI" font-size="14" fill="#04231b">
+    <rect x="615" y="125" width="110" height="34" rx="6" fill="#06d6a0"/><text x="648" y="147">START</text>
+    <rect x="740" y="125" width="110" height="34" rx="6" fill="#ffd166"/><text x="777" y="147">STOP</text>
+    <rect x="615" y="170" width="235" height="34" rx="6" fill="#243650" fill-opacity="0.7" stroke="#3d5a80"/><text x="690" y="192" fill="#e6edf7">RESET</text>
+  </g>
+  <text x="615" y="245" fill="#91a7c4" font-family="Segoe UI" font-size="13">Modbus TCP · Unit 1 · port 5020</text>
+  <text x="615" y="275" fill="#90be6d" font-family="Consolas" font-size="12">HR40001 State</text>
+  <text x="615" y="300" fill="#90be6d" font-family="Consolas" font-size="12">HR40002..05 Counters</text>
+  <text x="615" y="325" fill="#90be6d" font-family="Consolas" font-size="12">HR40007 Speed</text>
+  <text x="30" y="450" fill="#91a7c4" font-family="Segoe UI" font-size="13">Simulated data · no physical Micro850 connected</text>
+</svg>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micro850 Conveyor HMI</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Conveyor Sorting Station</h1>
+    <p>Micro850 · Ladder · Modbus TCP · Simulated process</p>
+  </header>
+  <main>
+    <section class="panel status">
+      <div class="state" id="state">STOPPED</div>
+      <div class="grid">
+        <div><span>Total</span><strong id="total">0</strong></div>
+        <div><span>Small</span><strong id="small">0</strong></div>
+        <div><span>Large</span><strong id="large">0</strong></div>
+        <div><span>Rejected</span><strong id="rejected">0</strong></div>
+        <div><span>Throughput</span><strong id="throughput">0 pph</strong></div>
+        <div><span>Speed</span><strong id="speed">50 %</strong></div>
+      </div>
+    </section>
+    <section class="panel conveyor">
+      <div class="belt">
+        <div class="sensor pe1">PE1</div>
+        <div class="sensor pe2">PE2</div>
+        <div class="sensor diverter">DIV</div>
+        <div class="parts" id="parts"></div>
+      </div>
+      <div class="sensors">
+        <span id="pe1">PE1 0</span>
+        <span id="pe2">PE2 0</span>
+        <span id="jamSensor">JAM 0</span>
+        <span id="estop">E-STOP OK</span>
+      </div>
+    </section>
+    <section class="panel controls">
+      <h2>Controls</h2>
+      <button id="start">START</button>
+      <button id="stop">STOP</button>
+      <button id="reset">RESET</button>
+      <div class="row">
+        <button id="addSmall">+ Small part</button>
+        <button id="addLarge">+ Large part</button>
+      </div>
+      <label>Belt speed <input id="speedInput" type="range" min="0" max="100" value="50" /></label>
+      <div class="row">
+        <button id="injectJam" class="warn">Toggle jam</button>
+        <button id="injectEstop" class="danger">Toggle E-stop</button>
+      </div>
+    </section>
+    <section class="panel modbus">
+      <h2>Modbus TCP</h2>
+      <p id="modbusInfo">Unit 1 · port 5020</p>
+      <code>HR40001 State · HR40002 Total · HR40005 Rejected · HR40007 Speed</code>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
