@@ -1,0 +1,3 @@
+# Optional dependencies for MODE=real only (not needed for simulation/tests).
+pymodbus>=3.8,<4
+python-dotenv>=1.0

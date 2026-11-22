@@ -115,6 +115,10 @@ python simulation/modbus_client.py --host 127.0.0.1 --port 5020 --start 0 --quan
 - [x] Complete README
 - [x] Repository initialized on `main`
 
+## 11. Optional real-mode adapter
+
+`MODE=simulation` stays the default; the simulated Modbus TCP server and tests are unchanged. An optional Modbus TCP client (`simulation/real_adapter.py`) is enabled with `MODE=real`, `MODBUS_HOST`, `MODBUS_PORT` and `MODBUS_UNIT_ID`, with configurable register/coil maps. It is read-only unless `ALLOW_WRITES=true` and never falls back silently. See [docs/real-integration.md](docs/real-integration.md) and [config/real.env.example](config/real.env.example).
+
 ---
 
 **Author:** Bismarck Acevedo — Electronic Engineer, Industrial Automation & PLC Programming.
